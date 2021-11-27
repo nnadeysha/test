@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+    min-width: 375px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1168px;
+    
+}
+.header-wrapper,
+.main-wrapper{
+    width: 100%;
+    display: flex;
+}
+.header-wrapper{
+   align-items: center;
+    justify-content: space-between;
+}
+.main-wrapper{
+    flex-direction: column;
+
+}
