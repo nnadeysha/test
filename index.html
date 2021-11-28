@@ -5,54 +5,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QSOFT</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:wght@100;500&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <header class="header container">
-      <div class="header-wrapper">
+  <body class="b-page">
+    <div class="b-page__header">
+      <div class="header-wrapper container">
         <div class="logo">
-          <h1 class="logo__title_invisible">QSOFT</h1>
-          <span class="logo__image"></span>
+          <div class="logo__image"></div>
         </div>
         <form class="search-form">
-          <input type="search" placeholder="Найти...">
-          <button type="submit">Поиск</button>
+          <input
+            class="search-form__input"
+            type="search"
+            placeholder="Найти..."
+          />
+          <button class="search-form__submit" type="submit"></button>
         </form>
         <div class="authorization">
           <span class="authorization__name">Константин</span>
-          <img class="authorization__avatar" src="https://raw.githubusercontent.com/nnadeysha/test-qsoft/main/assets/auth.png" alt="avatar">
+          <img
+            class="authorization__avatar"
+            src="https://raw.githubusercontent.com/nnadeysha/test-qsoft/main/assets/auth.png"
+            alt="avatar"
+          />
         </div>
       </div>
-    </header>
-    <main class="main container">
-      <div class="main-wrapper">
+    </div>
+    <div class="b-page__main">
+      <div class="main-wrapper container">
         <div class="title">
           <h3 class="title__text">Наши партнеры</h3>
         </div>
         <div class="partners">
-          <a class="partners__item" href="https://www.henkel.ru/" target="_blank">
-            <img class="partners__item__image" src="https://raw.githubusercontent.com/nnadeysha/test-qsoft/main/assets/henkel.jpg" alt="Henkel" />
+          <a
+            class="partners__link"
+            href="https://www.henkel.ru/"
+            target="_blank"
+          >
+            <img
+              class="partners__image"
+              srcset="
+              "
+              src="https://raw.githubusercontent.com/nnadeysha/test-qsoft/main/assets/henkel.jpg"
+              alt="Henkel"
+            />
           </a>
-          <a class="partners__item" href="https://www.deere.ru/ru/" target="_blank"
-            ><img class="partners__item__image" src="https://raw.githubusercontent.com/nnadeysha/test-qsoft/main/assets/john-deere.jpg" alt="John Deere"
+          <a
+            class="partners__link"
+            href="https://www.deere.ru/ru/"
+            target="_blank"
+            ><img
+              class="partners__image"
+              src="https://raw.githubusercontent.com/nnadeysha/test-qsoft/main/assets/john-deere.jpg"
+              alt="John Deere"
           /></a>
-          <a class="partners__item" href="https://mcdonalds.ru/" target="_blank"
-            ><img class="partners__item__image" src="https://raw.githubusercontent.com/nnadeysha/test-qsoft/main/assets/mcdonalds.jpg" alt="MCDonald's"
+          <a class="partners__link" href="https://mcdonalds.ru/" target="_blank"
+            ><img
+              class="partners__image"
+              src="https://raw.githubusercontent.com/nnadeysha/test-qsoft/main/assets/mcdonalds.jpg"
+              alt="MCDonald's"
           /></a>
-          <a class="partners__item" href="https://www.ikea.com/ru/ru/" target="_blank"
-            ><img class="partners__item__image" src="https://raw.githubusercontent.com/nnadeysha/test-qsoft/main/assets/ikea.jpg" alt="IKEA"
+          <a
+            class="partners__link"
+            href="https://www.ikea.com/ru/ru/"
+            target="_blank"
+            ><img
+              class="partners__image"
+              src="https://raw.githubusercontent.com/nnadeysha/test-qsoft/main/assets/ikea.jpg"
+              alt="IKEA"
           /></a>
-          <a class="partners__item" href="https://www.reebok.ru/" target="_blank"
-            ><img class="partners__item__image" src="https://raw.githubusercontent.com/nnadeysha/test-qsoft/main/assets/reebok.jpg" alt="Reebok"
+          <a
+            class="partners__link"
+            href="https://www.reebok.ru/"
+            target="_blank"
+            ><img
+              class="partners__image"
+              src="https://raw.githubusercontent.com/nnadeysha/test-qsoft/main/assets/reebok.jpg"
+              alt="Reebok"
           /></a>
-          <a class="partners__item" href="https://www.nike.com/ru/" target="_blank"
-            ><img class="partners__item__image" src="https://raw.githubusercontent.com/nnadeysha/test-qsoft/main/assets/nike.jpg" alt="Nike"
+          <a
+            class="partners__link"
+            href="https://www.nike.com/ru/"
+            target="_blank"
+            ><img
+              class="partners__image"
+              src="https://raw.githubusercontent.com/nnadeysha/test-qsoft/main/assets/nike.jpg"
+              alt="Nike"
           /></a>
-          <a class="partners__item" href="cat.com/ru_RU.html" target="_blank"
-            ><img class="partners__item__image" src="https://raw.githubusercontent.com/nnadeysha/test-qsoft/main/assets/catepillar.jpg" alt="Caterpillar"
+          <a class="partners__link" href="cat.com/ru_RU.html" target="_blank"
+            ><img
+              class="partners__image"
+              src="https://raw.githubusercontent.com/nnadeysha/test-qsoft/main/assets/catepillar.jpg"
+              alt="Caterpillar"
           /></a>
         </div>
       </div>
-    </main>
+    </div>
   </body>
 </html>
