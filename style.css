@@ -10,6 +10,8 @@
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
   font-style: normal;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .b-page__header {
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
@@ -25,6 +27,7 @@
 .main-wrapper {
   width: 100%;
   display: flex;
+  transition: ease 0.5s;
 }
 .header-wrapper {
   align-items: center;
@@ -44,9 +47,14 @@
   width: 100%;
   border-left: 1px solid #ebebf1;
   height: 100%;
+  transition: ease 0.5s;
 }
 .authorization__avatar{
     margin-right: 2px;
+}
+.authorization:hover{
+    cursor: pointer;
+    filter: saturate(3);
 }
 .logo__image {
   background: url(https://raw.githubusercontent.com/nnadeysha/test-qsoft/main/assets/logo.svg);
@@ -106,7 +114,7 @@
 
 /* main */
 .title {
-  margin-top: 69px;
+  margin-top: 69.5px;
 }
 .title__text {
   font-weight: 500;
@@ -116,35 +124,63 @@
   color: #121920;
 }
 .partners {
-  margin-top: 30px;
+  margin-top: 31px;
   display: flex;
   flex-wrap: wrap;
   column-gap: 30px;
-  row-gap: 28px;
-}
-
-.partners__image {
-  /*   flex: 0 0 15%; */
-  min-width: 230px;
-  height: 120px;
-  border-radius: 5px;
+  row-gap: 30px;
  
 }
+
+
 .partners__link{
     display: block;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 230px;
+    max-width: 270px;
+    width: 100%;
+    height: 120px;
+    border-radius: 5px;
+    transition: ease 0.5s;
 }
 
-.partners__image:hover {
+
+.henkel{
+    background: url(https://raw.githubusercontent.com/nnadeysha/test-qsoft/main/assets/henkel.jpg);
+}
+.john-deere{
+    background: url(https://raw.githubusercontent.com/nnadeysha/test-qsoft/main/assets/john-deere.jpg);
+}
+.mcdonalds{
+    background: url(https://raw.githubusercontent.com/nnadeysha/test-qsoft/main/assets/mcdonalds.jpg);
+}
+.ikea{
+    background:url(https://raw.githubusercontent.com/nnadeysha/test-qsoft/main/assets/ikea.jpg);
+}
+.reebok{
+    background: url(https://raw.githubusercontent.com/nnadeysha/test-qsoft/main/assets/reebok.jpg);
+}
+.nike{
+    background: url(https://raw.githubusercontent.com/nnadeysha/test-qsoft/main/assets/nike.jpg);
+}
+.catepillar{
+    background: url(https://raw.githubusercontent.com/nnadeysha/test-qsoft/main/assets/catepillar.jpg);
+}
+
+.partners__link:hover {
   box-shadow: -3px 0px 40px rgba(0, 0, 0, 0.1),
     0px 0px 10px rgba(164, 164, 164, 0.03);
     cursor: pointer;
 }
-.authorization:hover{
-    cursor: pointer;
-    filter: saturate(2.2);
-}
+
 
 @media screen and (max-width: 768px){
+    .b-page{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 .container{
     max-width: 730px;
 }
@@ -154,21 +190,85 @@
 .title__text{
     font-size: 28px;
 }
-.partners__image {
-    max-width: 229px;
-}
 .partners {
     margin-top: 30px;
-    column-gap: 20px;
-    row-gap: 17px;
+    column-gap: 19.5px;
+    row-gap: 20.5px;
   }
   .title {
     margin-left: 1px;
   }
+  .partners__link{
+    
+    max-width: 230px;
+    
 }
-@media screen and (max-width: 375px){
+  .henkel{
+    background: url(https://raw.githubusercontent.com/nnadeysha/test-qsoft/main/assets/henkel-768.jpg);
+}
+.john-deere{
+    background: url(https://raw.githubusercontent.com/nnadeysha/test-qsoft/main/assets/john-deere-768.jpg);
+}
+.mcdonalds{
+    background: url(https://raw.githubusercontent.com/nnadeysha/test-qsoft/main/assets/mcdonalds-768.jpg);
+}
+.ikea{
+    background:url(https://raw.githubusercontent.com/nnadeysha/test-qsoft/main/assets/ikea-768.jpg);
+}
+.reebok{
+    background: url(https://raw.githubusercontent.com/nnadeysha/test-qsoft/main/assets/reebok-768.jpg);
+}
+.nike{
+    background: url(https://raw.githubusercontent.com/nnadeysha/test-qsoft/main/assets/nike-768.jpg);
+}
+.catepillar{
+    background: url(https://raw.githubusercontent.com/nnadeysha/test-qsoft/main/assets/catepillar-768.jpg);
+}
+
+}
+@media  screen and (max-width: 376px){
+    .b-page{
+        position: relative;
+    }
     .container{
         max-width: 335px;
     }
-    
+    .header-wrapper{
+        height: 117px;
+        position: relative;
+    }
+    .authorization{
+        border: none;
+        background: url();
+    }
+    .search-form{
+        position: absolute;
+        bottom: 0;
+    }
+    .partners__link{
+        max-width: 335px;
+    }
+      .henkel{
+        background: url(https://raw.githubusercontent.com/nnadeysha/test-qsoft/main/assets/henkel-375.jpg);
+    }
+    .john-deere{
+        background: url(https://raw.githubusercontent.com/nnadeysha/test-qsoft/main/assets/john-deere-375.jpg);
+    }
+    .mcdonalds{
+        background: url(https://raw.githubusercontent.com/nnadeysha/test-qsoft/main/assets/mcdonalds-375.jpg);
+    }
+    .ikea{
+        background:url(https://raw.githubusercontent.com/nnadeysha/test-qsoft/main/assets/ikea-375.jpg);
+    }
+    .reebok{
+        background: url(https://raw.githubusercontent.com/nnadeysha/test-qsoft/main/assets/reebok-375.jpg);
+    }
+    .nike{
+        background: url(https://raw.githubusercontent.com/nnadeysha/test-qsoft/main/assets/nike-375.jpg);
+    }
+    .catepillar{
+        background: url(https://raw.githubusercontent.com/nnadeysha/test-qsoft/main/assets/catepillar-768.jpg);
+    }
+
+
 }
