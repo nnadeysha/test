@@ -117,20 +117,21 @@
 }
 .partners {
   margin-top: 30px;
-  max-width: 1440px;
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  column-gap: 29.5px;
+  column-gap: 30px;
   row-gap: 28px;
-  max-height: 200px;
 }
 
 .partners__image {
-  max-width: 270px;
-  width: 100%;
+  /*   flex: 0 0 15%; */
+  min-width: 230px;
   height: 120px;
   border-radius: 5px;
+ 
+}
+.partners__link{
+    display: block;
 }
 
 .partners__image:hover {
@@ -154,11 +155,20 @@
     font-size: 28px;
 }
 .partners__image {
-    max-width: 230px;
+    max-width: 229px;
 }
+.partners {
+    margin-top: 30px;
+    column-gap: 20px;
+    row-gap: 17px;
+  }
+  .title {
+    margin-left: 1px;
+  }
 }
 @media screen and (max-width: 375px){
     .container{
-        max-width: 337px;
+        max-width: 335px;
     }
+    
 }
